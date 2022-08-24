@@ -162,3 +162,14 @@ line-height: 19px;
 #seeall>p{
     margin-top: 25px;
 }
+#heads{
+    width: 80%;
+    margin: auto;
+    
+}
+#heads>h1{
+    margin: auto;
+    width: 55%;
+    text-align: center;
+    
+}
