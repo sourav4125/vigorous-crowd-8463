@@ -1,0 +1,164 @@
+#navbar{
+    height: 90px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    /* margin: auto; */
+    
+}
+.container{
+    margin: auto;
+    
+}
+.container img{
+    width: 50%;
+    margin: auto;
+    
+}
+
+.container>button{
+    margin-right: 12px;
+    border: none;
+    height: 40px;
+    background-color: white;
+    font-weight: bolder;
+    font-size: medium;
+    
+}
+.container>button:hover{
+    cursor: pointer;
+}
+.container>button~.btn{
+    border: 1px solid rgb(150, 49, 49);
+    
+}
+.container>button~.su{
+    background-color:#43762b;
+    color: white;
+    
+}
+#body{
+    width: 80%;
+    margin: auto;
+    border: 1px solid brown;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+#body>#c{
+    
+    border: 1px solid palegreen;
+    width:50%;
+    height: auto;
+    
+}
+#body>#c>.bc{
+    width: 55%;
+}
+#body>#c>.p{
+    width: 85%;
+}
+#c>#email{
+    margin-right: 10px;
+    height: 20px;
+}
+#c>#free{
+    background-color: green;
+    height: 25px;
+    color: white;
+}
+#logos{
+    border: 1px solid purple;
+    width: 80%;
+    margin: auto;
+    margin-top: 7px;
+    
+}
+#logos>img{
+    margin-right: 79px;
+}
+#base{
+border: 1px solid gold;
+height: auto;
+width: 80%;
+margin: auto;
+margin-top: 16px;
+display: flex;
+}
+#base>#bsc{
+border: 1px solid aqua;
+width: 70%;
+}
+#base>#bsc>h1{
+    width: 70%;
+}
+#base>#bsc>p{
+    width: 70%;
+    line-height: 22px;
+}
+#base>#reviews{
+border: 1px solid firebrick;
+}
+#bsc>#sq{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,auto);
+    border: 1px solid slateblue ;
+}
+
+#bsc>#sq>div>p{
+    width: 60%;
+}
+#uni{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+#tracker{
+    width: 80%;
+    margin: auto;
+    border: 1px solid springgreen;
+    display: flex;
+    margin-top: 19px;
+}
+#tracker>#text>p{
+width: 70%;
+line-height: 19px;
+}
+#tracker>#images{
+    margin: auto;
+}
+#features{
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    
+    
+}
+#features>button{
+    background-color: gray;
+    margin-right: 20px;
+    line-height:19px;
+    border: none;
+    margin-bottom: 18px;
+    height: 49px;
+    
+}
+#seeall{
+   
+    width: 80%;
+    text-align: center;
+   margin: auto;
+   margin-top:30px
+}
+#seeall>button{
+   background-color: white;
+   border:0.5px solid gray;
+   height: 45px;
+}
+#seeall>p{
+    margin-top: 25px;
+}
