@@ -1,134 +1,649 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A Time Tracker App For Business & FreeLancers|DeskTime</title>
-    <link rel="stylesheet" href="head.css">
-</head>
-<body>
+    <link rel="stylesheet" href="head.css" />
+  </head>
+  <body>
     <div id="navbar">
-        <div class="container"><img src="data:image/jpeg;base64,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" alt=""></div>
-        <div class="container">
-            <button>Demo</button>
-            <button>Features</button>
-            <button>Pricing</button>
-            <button>About Us</button>
-            <button>FAQ</button>
-            <button>Blog</button>
-            <button class="btn">LOGIN</button>
-            <button class="su">SIGN UP</button>
-            <button>EN</button>
-        </div>
+      <div class="container">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt=""
+        />
+      </div>
+      <div class="container">
+        <button>Demo</button>
+        <button>Features</button>
+        <button>Pricing</button>
+        <button>About Us</button>
+        <button>FAQ</button>
+        <button>Blog</button>
+        <button class="btn">LOGIN</button>
+        <button class="su">SIGN UP</button>
+        <button>EN</button>
+      </div>
     </div>
     <div id="body">
-        <div id="c">
-            <h1 class="bc">The ultimate all-in-one automatic time tracker</h1>
-            <p class="p">A time tracker and workforce management system that will help you develop a high-performing team that smashes goals every time.</p>
-            <input placeholder="Your Work Email" type="email" name="email" id="email" /><button id="free">START A FREE TRIAL</button>
-            <p>Try free for 14 days. No credit card required.</p>
-            <p>By signing up, you agree to our terms and privacy policy.</p>
-        </div>
-        <div>youtube</div>
+      <div id="c">
+        <h1 class="bc">The ultimate all-in-one automatic time tracker</h1>
+        <p class="p">
+          A time tracker and workforce management system that will help you
+          develop a high-performing team that smashes goals every time.
+        </p>
+        <input
+          placeholder="Your Work Email"
+          type="email"
+          name="email"
+          id="email"
+        /><button id="free">START A FREE TRIAL</button>
+        <p>Try free for 14 days. No credit card required.</p>
+        <p>By signing up, you agree to our terms and privacy policy.</p>
+      </div>
+      <div>youtube</div>
     </div>
     <div id="logos">
-        <img src="https://desktime.com/assets/img/clients/customer-sixt-logo-white.svg" alt="">
-        <img src="https://desktime.com/assets/img/clients/customer-mapon-logo-white.svg" alt="">
-        <img src="https://desktime.com/assets/img/clients/customer-montway-logo-white.svg" alt="">
-        <img src="https://desktime.com/assets/img/clients/customer-onthemap-logo-white.svg" alt="">
-        <img src="https://desktime.com/assets/img/clients/customer-printful-logo-white.svg" alt="">
+      <img
+        src="https://desktime.com/assets/img/clients/customer-sixt-logo-white.svg"
+        alt=""
+      />
+      <img
+        src="https://desktime.com/assets/img/clients/customer-mapon-logo-white.svg"
+        alt=""
+      />
+      <img
+        src="https://desktime.com/assets/img/clients/customer-montway-logo-white.svg"
+        alt=""
+      />
+      <img
+        src="https://desktime.com/assets/img/clients/customer-onthemap-logo-white.svg"
+        alt=""
+      />
+      <img
+        src="https://desktime.com/assets/img/clients/customer-printful-logo-white.svg"
+        alt=""
+      />
     </div>
     <div id="base">
-        <div id="bsc">
-            <h1>Use time tracking software to boost productivity by 30%</h1>
-            <p>A time tracker and workforce management system that will help you develop a high-performing team that smashes goals every time.</p>
-            <div id="sq">
-                    <div>
-                        <h2><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-star-fill" viewBox="0 0 16 16">
-                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                          </svg> Skyrocket effectiveness</h2>
-                        <p>Know who's doing what and how it's going all the while eliminating distractions.</p>
-                    </div>
-                    <div>
-                        <h2><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-shield-fill" viewBox="0 0 16 16">
-                            <path d="M5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
-                          </svg> Minimize business losses</h2>
-                        <p>Get precise insights into projects to determine profitability and allocate resources.</p>
-                    </div>
-                    <div>
-                        <h2><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-app-indicator" viewBox="0 0 16 16">
-                            <path d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"/>
-                            <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                          </svg> Automate team management</h2>
-                        <p>Organize shifts, absences, and booking-related questions all in one place.</p>
-                    </div>
-                    <div>
-                        <h2><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-calendar-event-fill" viewBox="0 0 16 16">
-                            <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-3.5-7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"/>
-                          </svg> Avoid burnout</h2>
-                        <p>Take care of your team and eliminate overworking with break reminders and private time.</p>
-                    </div>
-            </div>
+      <div id="bsc">
+        <h1>Use time tracking software to boost productivity by 30%</h1>
+        <p>
+          A time tracker and workforce management system that will help you
+          develop a high-performing team that smashes goals every time.
+        </p>
+        <div id="sq">
+          <div>
+            <h2>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="green"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              Skyrocket effectiveness
+            </h2>
+            <p>
+              Know who's doing what and how it's going all the while eliminating
+              distractions.
+            </p>
+          </div>
+          <div>
+            <h2>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="green"
+                class="bi bi-shield-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"
+                />
+              </svg>
+              Minimize business losses
+            </h2>
+            <p>
+              Get precise insights into projects to determine profitability and
+              allocate resources.
+            </p>
+          </div>
+          <div>
+            <h2>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="green"
+                class="bi bi-app-indicator"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"
+                />
+                <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              </svg>
+              Automate team management
+            </h2>
+            <p>
+              Organize shifts, absences, and booking-related questions all in
+              one place.
+            </p>
+          </div>
+          <div>
+            <h2>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="green"
+                class="bi bi-calendar-event-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-3.5-7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"
+                />
+              </svg>
+              Avoid burnout
+            </h2>
+            <p>
+              Take care of your team and eliminate overworking with break
+              reminders and private time.
+            </p>
+          </div>
         </div>
-        <div id="reviews"></div>
+      </div>
+      <div id="reviews"></div>
     </div>
     <div id="uni">
-        <h1>A universal platform for running anything from businesses to large enterprises</h1>
-        <p>From a powerful time tracker to project management, human resource planning, and running an office. Everything is fully customizable and can be turned on and off for the whole company or specific users.</p>
+      <h1>
+        A universal platform for running anything from businesses to large
+        enterprises
+      </h1>
+      <p>
+        From a powerful time tracker to project management, human resource
+        planning, and running an office. Everything is fully customizable and
+        can be turned on and off for the whole company or specific users.
+      </p>
     </div>
     <div id="tracker">
-        <div id="text">
-            <h2><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-              </svg> No more manual time trackers</h2>
-            <p>Fully automatic start and end times, no manual entry, and no human error – the automatic time tracker starts up as soon as you open the computer and stops when you close it.</p>
-            <h2><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-              </svg> Oversee work progress</h2>
-            <p>With URL and document title tracking it's easy to always be informed about your team's overall progress and habits during work hours.</p>
-            <h2><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive-fill" viewBox="0 0 16 16">
-                <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"/>
-              </svg> Optimize your resources</h2>
-            <p>Estimate project costs, assign hourly rates, issue invoices, and control expenses. Project management is easy when you have a birdseye view of all ongoing processes.</p>
-            <h2><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive-fill" viewBox="0 0 16 16">
-                <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"/>
-              </svg> Run your office smoothly</h2>
-            <p>DeskTime isn't just a time tracker. You can assign shifts and oversee absences, stay informed about remote workers and run a hybrid office all on one platform.</p>    
-            
-        </div>
-        <div id="images">
-            <img src="https://desktime.com/assets/img/new-homepage/universal-platform/universal-platform.webp" alt="">
-        </div>
+      <div id="text">
+        <h2>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-star-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+            />
+          </svg>
+          No more manual time trackers
+        </h2>
+        <p>
+          Fully automatic start and end times, no manual entry, and no human
+          error – the automatic time tracker starts up as soon as you open the
+          computer and stops when you close it.
+        </p>
+        <h2>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-star-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+            />
+          </svg>
+          Oversee work progress
+        </h2>
+        <p>
+          With URL and document title tracking it's easy to always be informed
+          about your team's overall progress and habits during work hours.
+        </p>
+        <h2>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-archive-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"
+            />
+          </svg>
+          Optimize your resources
+        </h2>
+        <p>
+          Estimate project costs, assign hourly rates, issue invoices, and
+          control expenses. Project management is easy when you have a birdseye
+          view of all ongoing processes.
+        </p>
+        <h2>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-archive-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"
+            />
+          </svg>
+          Run your office smoothly
+        </h2>
+        <p>
+          DeskTime isn't just a time tracker. You can assign shifts and oversee
+          absences, stay informed about remote workers and run a hybrid office
+          all on one platform.
+        </p>
+      </div>
+      <div id="images">
+        <img
+          src="https://desktime.com/assets/img/new-homepage/universal-platform/universal-platform.webp"
+          alt=""
+        />
+      </div>
     </div>
     <div id="features">
-        <button>Automatic Time Tracking</button>
-        <button>Offline Time Tracking</button>
-        <button>Document Title Tracking </button>
-        <button> Private Time Option</button>
-        <button>Invoicing</button>
-        <button>Pomodoro Timer</button>
-        <button>Cost Calculation</button>
-        <button>Team's Contact</button>
-        <button>Customs Reports</button>
-        <button>Absence Calendar</button>
-        <button>Web-Time Tracker</button>
-        <button>Third Party Integrations</button>
-        <button>Shift Scheduling</button>
-        <button>Mobile App</button>
-        <button>Url & App Tracking</button>
-        <button>Screenshots</button>
-        <button>Project Tracking</button>
-        <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
-            <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
-          </svg> Booking</button>
+      <button>Automatic Time Tracking</button>
+      <button>Offline Time Tracking</button>
+      <button>Document Title Tracking</button>
+      <button>Private Time Option</button>
+      <button>Invoicing</button>
+      <button>Pomodoro Timer</button>
+      <button>Cost Calculation</button>
+      <button>Team's Contact</button>
+      <button>Customs Reports</button>
+      <button>Absence Calendar</button>
+      <button>Web-Time Tracker</button>
+      <button>Third Party Integrations</button>
+      <button>Shift Scheduling</button>
+      <button>Mobile App</button>
+      <button>Url & App Tracking</button>
+      <button>Screenshots</button>
+      <button>Project Tracking</button>
+      <button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-calendar-check-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+          />
+        </svg>
+        Booking
+      </button>
     </div>
     <div id="seeall">
-        <button>SEE ALL FEATURES</button>
-        <p>All the features can be turned on and off to suit eveyone's needs</p>
+      <button>SEE ALL FEATURES</button>
+      <p>All the features can be turned on and off to suit eveyone's needs</p>
     </div>
     <div id="heads">
-        <h1>More than 18 000 companies worldwide trust DeskTime with their business</h1>
+      <h1>
+        More than 18 000 companies worldwide trust DeskTime with their business
+      </h1>
     </div>
-</body>
+    <div id="workflow">
+      <div id="jpg">
+        <img
+          src="https://desktime.com/assets/img/new-homepage/seamless-workflow/seamless-workflow.webp"
+          alt=""
+        />
+      </div>
+      <div id="para">
+        <h1>
+          A seamless workflow and healthy work-life balance for every employee
+        </h1>
+        <h2>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="green"
+            class="bi bi-calendar-check-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+            />
+          </svg>
+          Flexible schedule
+        </h2>
+        <p>
+          Time tracking is proof-of-work and DeskTime's time tracker gives you
+          just that – you can plan your schedule independently, while your
+          manager can simply follow your progress no matter where you are and
+          when you choose to work.
+        </p>
+        <h2>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="green"
+            class="bi bi-calendar-check-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+            />
+          </svg>
+          Regular break reminders
+        </h2>
+        <p>
+          Our time tracker uses the Pomodoro timer that will keep a cautious eye
+          on your workload and remind you to take regular breaks so you don't
+          lose focus all the while maintaining healthy habits and mental
+          well-being.
+        </p>
+        <h2>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="green"
+            class="bi bi-calendar-check-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+            />
+          </svg>
+          Private time
+        </h2>
+        <p>
+          DeskTime's Private time feature disables the website and time tracker
+          for when you have to take care of non-work-related tasks during office
+          hours. Employees can feel safe knowing their privacy is protected.
+        </p>
+        <h2>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="green"
+            class="bi bi-calendar-check-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+            />
+          </svg>
+          No more unbilled hours
+        </h2>
+        <p>
+          Employee time is pure gold when it comes to resource planning.
+          DeskTime's time tracker even lets you add time spent offline like in
+          meetings, brainstorms, or on work calls so no billable hours go
+          unnoticed.
+        </p>
+        <p>All the features can be turned on and off to suit eveyone's needs</p>
+      </div>
+    </div>
+    <div id="brands">
+      <div id="brand">
+        <img
+          src="https://desktime.com/assets/img/new-homepage/integrations/integrations.webp"
+          alt=""
+        />
+      </div>
+      <div id="context">
+        <h1>Integrations with popular work tools</h1>
+        <p>
+          From calendar apps to help you track offline time, to project
+          management software to make project and task tracking accurate, while
+          effortless. DeskTime can simplify every aspect of your workflow.
+        </p>
+        <button>READ MORE</button>
+      </div>
+    </div>
+    <div id="mobtrack">
+      <h1>A single time tracking app for desktops and mobile phones</h1>
+      <p>
+        Whether in the office or on the go – use DeskTime to keep track of your
+        and your team's time.
+      </p>
+    </div>
+    <div id="device">
+      <div id="desktop">
+        <img
+          src="https://desktime.com/assets/img/new-homepage/desktop/desktop.webp"
+          alt=""
+        />
+        <h2>DESKTIME FOR DESKTOPS</h2>
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="45"
+            height="40"
+            fill="gray"
+            class="bi bi-apple"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"
+            />
+            <path
+              d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="45"
+            height="40"
+            fill="gray"
+            class="bi bi-windows"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6.555 1.375 0 2.237v5.45h6.555V1.375zM0 13.795l6.555.933V8.313H0v5.482zm7.278-5.4.026 6.378L16 16V8.395H7.278zM16 0 7.33 1.244v6.414H16V0z"
+            />
+          </svg>
+        </p>
+        <h4>Requires download and installation</h4>
+        <p>Fully automated time tracker</p>
+        <p>App, URL & Document title tracking</p>
+        <p>Project and task tracking</p>
+        <p>Screenshots</p>
+        <p>Idle and Private time</p>
+        <button>LEARN MORE</button>
+      </div>
+      <div id="mobile">
+        <img
+          src="https://desktime.com/assets/img/new-homepage/mobile/mobile.webp"
+          alt=""
+        />
+        <h2>DESKTIME FOR DESKTOPS</h2>
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="45"
+            height="40"
+            fill="gray"
+            class="bi bi-apple"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"
+            />
+            <path
+              d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="45"
+            height="40"
+            fill="gray"
+            class="bi bi-android2"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="m10.213 1.471.691-1.26c.046-.083.03-.147-.048-.192-.085-.038-.15-.019-.195.058l-.7 1.27A4.832 4.832 0 0 0 8.005.941c-.688 0-1.34.135-1.956.404l-.7-1.27C5.303 0 5.239-.018 5.154.02c-.078.046-.094.11-.049.193l.691 1.259a4.25 4.25 0 0 0-1.673 1.476A3.697 3.697 0 0 0 3.5 5.02h9c0-.75-.208-1.44-.623-2.072a4.266 4.266 0 0 0-1.664-1.476ZM6.22 3.303a.367.367 0 0 1-.267.11.35.35 0 0 1-.263-.11.366.366 0 0 1-.107-.264.37.37 0 0 1 .107-.265.351.351 0 0 1 .263-.11c.103 0 .193.037.267.11a.36.36 0 0 1 .112.265.36.36 0 0 1-.112.264Zm4.101 0a.351.351 0 0 1-.262.11.366.366 0 0 1-.268-.11.358.358 0 0 1-.112-.264c0-.103.037-.191.112-.265a.367.367 0 0 1 .268-.11c.104 0 .19.037.262.11a.367.367 0 0 1 .107.265c0 .102-.035.19-.107.264ZM3.5 11.77c0 .294.104.544.311.75.208.204.46.307.76.307h.758l.01 2.182c0 .276.097.51.292.703a.961.961 0 0 0 .7.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h1.343v2.182c0 .276.097.51.292.703a.972.972 0 0 0 .71.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h.76c.291 0 .54-.103.749-.308.207-.205.311-.455.311-.75V5.365h-9v6.404Zm10.495-6.587a.983.983 0 0 0-.702.278.91.91 0 0 0-.293.685v4.063c0 .271.098.501.293.69a.97.97 0 0 0 .702.284c.28 0 .517-.095.712-.284a.924.924 0 0 0 .293-.69V6.146a.91.91 0 0 0-.293-.685.995.995 0 0 0-.712-.278Zm-12.702.283a.985.985 0 0 1 .712-.283c.273 0 .507.094.702.283a.913.913 0 0 1 .293.68v4.063a.932.932 0 0 1-.288.69.97.97 0 0 1-.707.284.986.986 0 0 1-.712-.284.924.924 0 0 1-.293-.69V6.146c0-.264.098-.491.293-.68Z"
+            />
+          </svg>
+        </p>
+        <h4>Requires download and installation</h4>
+        <p>Manual time tracker</p>
+        <p>Workday overview</p>
+        <p>Project and task tracking</p>
+        <button>LEARN MORE</button>
+      </div>
+      <div id="web">
+        <img
+          src="https://desktime.com/assets/img/new-homepage/webtimer/webtimer.webp"
+          alt=""
+        />
+        <h2>DESKTIME FOR DESKTOPS</h2>
+        <h3>Supported on all popular browsers</h3>
+        <h4>Requires download and installation</h4>
+        <p>Manual time tracker</p>
+        <p>Workday overview</p>
+        <p>Project and task tracking</p>
+        <button>LEARN MORE</button>
+      </div>
+    </div>
+    <div id="ttt">
+      <div id="tt">
+        <h1>Want to get the most out of your time? Try DeskTime for free!</h1>
+        <input
+          placeholder="Your Work Email"
+          type="email"
+          name="email"
+          id="email"
+        /><button id="free">START FREE TRIAL</button>
+        <p>Try free for 14 days. No credit card required.</p>
+        <p>By signing up, you agree to our terms and privacy policy.</p>
+      </div>
+    </div>
+    <div id="footer">
+        <div id="company">
+            <h3>Company</h3>
+           <p>Home</p>
+           <p>Terms</p>
+           <p>Privacy</p>
+           <p>Cookies</p>
+           <p>Affiliate terms</p>
+           <p>Download app</p>
+           <p>Pricing</p>
+           <p>Affiliate</p>
+           <p>Press</p>
+           <p id="lang">DeskTime in your language</p>
+        </div>
+        <div id="learnmore">
+            <h3>Learn More</h3>
+            <p>All Resources</p>
+            <p>Employee monitoring guide</p>
+            <p>Online employee time clock</p>
+            <p>Best time tracking apps </p>
+            <p>DeskTime for business</p>
+            <p>DeskTime for freelancers</p>
+            <p>FAQ</p>
+            <p>Case Studies </p>
+            <p>Webinars</p>
+            <p>Blogs</p>
+        </div>
+        <div id="integrations">
+            <h3>Integrations</h3>
+            <p>All Integrations</p>
+            <p>Trello</p>
+            <p>BaseCamp</p>
+            <p>Jira</p>
+            <p>Asana</p>
+            <p>Outlook Calendar</p>
+            <p>Google Calendar</p>
+           
+        </div>
+        <div id="feat">
+            <h3>Features</h3>
+            <p>All Features</p>
+            <p>Automatic Time Tracking</p>
+            <p>URL & App Tracking</p>
+            <p>Screenshots</p>
+            <p>Project Time Tracking</p>
+            <p>Shift schedule</p>
+            <p>Offline Time Tracking</p>
+            <p>Invoicing</p>
+            <p>Absence Calendar</p>
+            <p >Mobile App</p>
+            <p>Feature Request</p>
+            </div>
+        <div id="help">
+            <h3>Help Center</h3>
+            <p>Contact Us</p>
+            <p>Schedule A Call</p>
+            <p>Send us an e-mail</p>
+            <p>Request In Person Training</p>
+            <p>Open Chat</p>
+            <p>Phone Support</p>
+            <p>USA: +1 (315) 6365354</p>
+            <p>EU: +371 27337268</p>
+        </div>
+    </div>
+    <div id="lst">
+        <div id="igs"><img src="data:image/jpeg;base64,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" alt=""></div>
+        <div id="applestore">
+            <img src="data:image/png;base64,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" alt="">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYQAAACCCAMAAABxTU9IAAAAkFBMVEUDAgL///8AAACRk5aNj5KGiIqUlplgYWNxcnXi4uKkpKQKCQn7+/vx8fHZ2dl0dHQ6Ojro6OjU1NRFRESTkpJ6enqqqqpLSkrIyMjt7e1bW1u8vLz19fWYmJhnZ2fX19cjIyPMzMwzMzMWFha4uLgqKSmBgYFUVFRAQECnp6ceHR18foEmJSVWV1nCwcGKioqHwMZYAAAUnElEQVR4nO2da2OivBKAZUC7KmpBwSvUC15q++L//3cnd5KAmLRae3aZL7uikDBPkplMJmnL0eVtNkvajTxIknwWllTeUj6t8uTD8zy3kYcJUu9HJ19dhTCPPzy306G/bOQh4hIFex+9biUEP2sjBN7LdPu5g0YeJLv99KXtIg7teFWG0MWUohP7bauRhwjV7vq/dsf12qEOYYbwRNtG/T8iSM1ThKGdqRCytuv+1xD4MQHop3hIkiEgBt6pYfCTAjD2eF8gEN4Qg22D4GcFYIsohBzCANmDccPgxwVOrnsYMAjvXuelGYueIPBfx0sohGHb/WgYPEMAos7HkEBAM4dTw+ApAnvXdTGELu4Iz67NvyrwB3eFlpN5jVV+msDW9WIE4cP1GovwLAFou3+cVuC5fxoGTxN46XzMWzOvc2wgPE1g3PHy1sZzm8ny8wR2rrds9Vx310B4mgB4bq91aezyUwU+3Eur7bYbBk8UPFNoNVO15wqkCILXaTzUZwr2UVtuM014qjQQfoH8DRC+kBpyj2yG+2Wk3BWCRbXkPJzvlnrs9V7sHgJJ/P7tYl/i9ztNce8HAWlze5iczR4E4ywm0rssvosBLo5jqVKYO84XCxWtBhLHuVOw514QUNUuOKvPMCIOL1Ly6+V7FODgOD1LCMFXIcBhMtmTW2Hy2yAARAOi0S9AcJzutyj8LAR05/QBENrfhwCwYa3acJTEEOL+er0+TQKVgqmRKH6nQCjdrl8gnyohlEuuqAt0NQjl59ur8i4QYL+ybNMYQo/ZZZxrkLBxVrbVyn+kC7pNlyDotr5k+/nnEgTtl1f8BvQJQXil1SAQbpRnJveAAGufDywzw+dgCO9ccTgRkDZQmC7RowYZHnVhtwwz8rajMDwQ5cdhvgb08e0VekiNwYTeJSAAuexsUm47YYR7qJ9P+edxFszDSRkC+2U34VzDcA8xMt+BbLBgn2Wouc2y5QIIhCkkaBSeJ6K8yxt6ShhZUrgDBPJKTCJ7COh+diPtFESI0jeO/4r/zdF74X8/V84QtTL08luWzLwhkDgEOPLGsKF0+hulXuRWLHMdghhOnRXhBT1UBts9kEn96FWqH3qYP32jH0Na3o5vONjYUbgHhLhwdPZfgNCCDBkIpk1nmJC9Eyl6y4j+Az7tKbAgwxb2SHPnrdcbclgMAmzRD1dZskTXl8AqFiSXCf7hmnQpXMU8C5xch5DjXpzEqFn7pBciCDMnTEjHSgsI202Iysh5T/A3zpDW40LaUEjK6/msfHMNfhsCnAo3JzaeqykQJmQcg/UKa5VaiQH650R+A1P85BcQlvDisJ9ltAkyCIA1iXsK7OfES4Nz1++SEXpD6eHxfIM/YxgyBDgi5U/xNzOsPyAQnBG+gJ6ZS+ORZhOQ8mk9hvhChH+L5DzAv7FR4fch5PYdQYMwIm+BlUmNAG5SKXlhOvwES4QX6zLYUQghaehb6ghwCOijT5wz3GUybsHxPwfSPLCqB2QFkQx7MoScD1hIf/4nhUA705GPNfynineUk+f3fdxTAYbO6kzKjCyaI9XGNyHAZ9ERLsZPqYSAmuEC+AWs1tgZ7DGROMLa3gXE7mMI1AT0A0qFQUhxO6cPHKBhv1U4KyMKYULZMCskt2+feQZkZDxSCAfyhPUANwSp4gqEA/3fikBY4/5MhXYNcx1+G8JEMFiamyMVwoFW/82Zf9K3OpOGiH90xBpK0Vvt8Oh0YBCiKghJ4enOqFIBFpM8HA7nFEIuHAfVMGOlhSCqElEIqQGEEf3fG4GA6jd4GxJxaCMw18Z3IQgPZGbhEqgQYocMN12iU3yhT7QCnwOk1hS/YYBUE9HXr4NwYKpcMktebI+MaU8bSZSKyuzFwI8LSb4IYezI8pMQAFb2/UB3UQdYraQnrOlb7WhPQCPRBukjxFOJDDXkAG5AmMg9AU5olBnGlyi9lHpCV+8Jm+/3BAQhPy6YWIV1vw+B+uarg5VrrECImAu64cEY3PrfqfMZoLdGU+sF6t9dOqJfhTAq2vMAeVdkfH+XbULC7WXJJiCTXtiExS0I42oIe2LDvzJn/jaEHUYweF/bFsvUjGThF9MENvPdsNkb8k6PK+dETN2RvfNVCFvh/BxJv8Q+1oLPF2I6z5i3yIWD5h3NGH7oI/Ox/2JPwN4R9c5gu/18cE/Qgiz5LF6clZiOUbEsdtQ/4n1zA3I/mmz52DPFOlrRJwZOl0wZkJrEK16DgFWZ4d+u57Q5z/D4hCkzm4B+T38w1ecJqKvMiXe5pKatBkJIn1GGQC6QaQhkPrdOhhq1hIDL2L5cogXXNtM7fvfRJEmSy8KEA4bgr5CQwYybAuxoZZdJ6AjnD0/Gc/aCLDp4DUKLWEY0Y419NokbkcddcmcuzcjncbJx5l0VAlbtqndJ8AQZb5apgYCnccOMxY5UCBgyKj/pslZlLHYQ8EQkZwGa4eRMWwS5vE4KTyQ83MSgrCf0RPwr1i4RPZKBae+IsWrCIaCJw5zN3ujEIeW3UwsObKP2ascgiOefZnrsaMhvpUNeAWGlRoaJtaexo0RAGDKPeDtgD2GtylSsIEgRNuqULtgAFGlHx/i3FstgnC+JZD1peRONHBtC8cix7GfhkIR9IA9DPpML36iC+stwiSGMhkOaQQhrHOTk0VU8VR7imGwfwvBCB+sUVdRfbqEXbpQK0p86frZlgdkwpEbinIeZ8i7wmnXnKxzTSvOc+RFxOGQFJvgpQ9ulQgsISEUDR5NBnE4PS/0qHjpurO6AJOrV3Q5kLPKoV1xTvlS+6p/VXyqFiA+lroqvnvvXy9BrrherPt/SzTGHAPBeoezrYpkAURSjvkPBo3ypBfoF/XahL+1Cq1w59c5SGeovS1euVd9IjCGAFKgzk/RrFP5BMYVAvDdLaXb/GIohBN0kG4lVOPdfFlMI49s618UukPEvixkEHFyzFD9tGJiKIYT0ttY1acyyuRhBkCaUpmIVO/lh+ZIv/0gxg/B6W+uqmOYfkaf/pE5IUev1dt3/RRzMIMS31a6KRewEpkcs05/QCNJ72hsGg8FqMA+yaP9LMJhAIHkeVmKRqQ6vbFWo/3CFAJx7c7maq+X0V2Awg2DbESwUKiYgD7ciAIdS7AuvbT+4WJOamUBYWDKwyPcocijDB2tDRLZV6RYj59eib/eomgkE29myzWh05Df5Vklr1nI17jLn3RZgkWIx3Gx0z7qZQKhsQjUysoBQhGYnj4Vw4eWEvcVxfJyIeCTPsCMrY47xPpd71s0Egm3szvw1SLoLk+CRAwFOZSKy+RRBf86f58H0u78ZwsYSgvmZhmwqTpvgI6OuZG3YwZld0oLRi0L/l0Mo/92LejHXJutktJk+MOoKQH3TXF0wYkPU+G+EYBw3gh3J35vRicj8ceMRzm4tNw8+AYr/HyDMLCEkxhAi8vuI+V+ppqLCY6xcvK36/krJzAmba2drsXJndP8fQ3Iqr7BWP724pn95qzp67R7hHWWGEID1MZJW7ijbMfDabjpCkpJl+d3xks2yw3QnLwNPI/R99Ek0eIp6szx52V95bzb867YfpmRP+wSgj54V0SHrQostKgnn4yGezeLD8awsQ+9I+WRzySJZLvlsk9xwiWf5ezTeGWEwgmAbOhqYQqAhC7y9hYRplU0mzGMMQI42BL1zYVhptfAOyhGP8uI9glWFs55QmouIFnvWXqFbmO9jLjy4wfJYPJ5tUcoAUtKFVjzjYrwUNwTvWwMMRhAmjqWYbimnDx4B/99BgdCl2oBU/jtMq5FINOkxCGvFZlUGInCiKpbeFZWUIPBJP+y1/IalyDJlseW42I5Iru7UccOfmOQjPiBsYbhvjrV/nBDN9vvIO5MEhIP2cLFhlUKY7rWIUNXWSZ487lxJDrwGoSLVas6NO4Pwzuf8dHPQqRTszCuyZrTSTSD09efelBupX+y5U1pJAG4d/FMJwrDcAiIVQumtK3arFAk7s2OVvbwyHMFipT+cbDGk91AIPT4UYgjwOi/fcHP3jFkUtaIq9RKaGCQ2ZaU5jdRln5QgBMQyzMM4C0UtKGIGgdILl/FGbKeuCIAUMSrn7fBadrT6l0v7Qlt9crhcLjQldc9U6m8OaXqYsd40YPuJKIQ3fHUwHHYDKJYg5++L4zFdXq+PNQR7H9XIS4UW0RpdSCAZv+ohF33RxFcRSY3c80Ai2yveE6XhFFLk4Yw4hvKaEsjehR/E0WuFU0kLFIhE99lsqfV+3dDPdFNSsd4YpGv07RZEqPO9T28YMya3ckKNIFhbZpMgHjM17I2YtzqtgDDfc2d8wdriVIUQcaX1mYmumHuD1pL8eUbQSr/QJ2u89yyLychSLp9DyPmcAPa0fjwhGFVoKL3jNyFs7SE4Nw94YG+0YBU+aOorIIh2xLaB8z3GHEIiSoIdGz8qbXPJ0/ZnKZS7HofAO8K8WKLiqx+5DKGYfLCOIB/EcLxaH7lqZtkWgWMv19xB/tD1QH5FNh4F4o0FBGlkE82ZbAdgEOT9A5xSVeAEefzlpJGgSI8qQVhTIyT3aTbFp+UzCKOijZAH+Hu5whRk/ZkfhnlH1iv9WN5qpwtMX5lodxvyeVGCIA/w3FueShDkLew8UFcZC0StflrOaha+SwkCnWUP5EUe6FPjnRYQCp2z2ZsSJGTU6mMIhhBOetXNpMYwcKWLkBqrbq7rZKPaT6qEiQRBscLcZboyJ0NyjLVsQt6TShBiBkl5Qi4gMwhFR2TN6gCyjImZGNaOCqZpkLb5Fo7yPlWPFMMPF2rV/LMGQT1ZjcWx4gKC+n58PLpWMC1q0ZMn2WHlegJvJap/yVzpWQGhKJ9RS0aRJAc6pt0Bwpf8o/pjf9gTY6nR0PE+0iCkVUrICwhaS6V7ym68NJa0WC+MqiHQHqNudmGQu5UQNtdVcRcIO/96AVelZl2BT2u6YSHU+ofa6DC92hJ7gof0/d6g5dEKwCc3EGxbqA6BflxUQZhXQIC6dZfaJCDjTSJfMM11B+LVWJl9LYRIh6DaPO7SGM3YxeL/ZyUE2ky0daApaY2BLYTaPxJiDGFvD6HOL6uBmqgQjo/pCeTHfEoc3bMnrAZl8e8Dwb4r1HkEdTOPrmonVQ+LmZJlAUE1PKyl6hCurHNxj3dSCYHqNK2CMKyxCSlUSa1yjTcOrm2jeHUrzfztfVXoxZMCQRtuqPWWvKNAiRSz4crXGOxI0nEphAMsDB5XQOBFad4ZnRTnNd6RfT6nxRZakT1lJnUBXB6EWZ6mspzCQiVCJ8OqecJBmicoq2XMhd1oEKZVVwsIl0oIlT1tUzSCEgSTiVmlOiz2MVslXdSeh8fXWF60PkvfYqA4K0oWE98y9ClBkJsq7Aala+QyfbA+MvMO+VIJgcZ9VvKBLbCl48GiEgLd2Kf6IwajkdWO/rGNm1rbKdnIGmhrTtyqKjqRuxT33clyLofgS3EFHkvWdjvwDqSFs0SOcL8SwrmYnevPh0oIFaYc+vjUlaQ+pmxztoXNgFR7PCtInVr9gg7DuQKhiMeK02XfZQgSJX487UovnbsVkTq2sXAc1SO0NHeM3SQF5OCVthJ6+pUOgSNSIopRCWSFPmwgmG/qr9/ywddLSycviKADyBDICaWkY/NWsFcgkIA++f7InIfSOwsPOxFjg/Q4NmNmEwMRteVzmaFYT9gHcvllCFuf14drjNWo/m8J2p3y0jcNIS3qC6UNupxxB2da54MKwcnJwnC6YR/ZwZrFylpADpI9cS+61BEkDztI6MoZ7CIe2OY+Mffzp2JljaUMz0fMZLFV/xiqIYjRasiPv7n4rML3g4DahpmfemNZTck+VL+hfS2UINArfncuLBI70YlBYGPGoFtYrArnWA5Brt6W2aZ4nFg0EqDesowOOOKm1bLXW/J35wnEFRCE8xL0JpNJxu5Y3ci3sDz5i8+F6uWGp8wX6irOgeHjUR8EhG1pWscGbQYhLc0iK1eT4HxtelisYBTJADzbYl+RPMFPlKqAUH2Dfyv3xPr4NbUvzJLjdj+OMiU7Z1Tf+XiWRVX+L0/sSCQIn1rqD2fHIIz0NIQrK3r6IjNXaeEByzaP5x3tS4txXRFrr4CAWJdumN/M/7E+iBB2Yk1kKE3QTyLvLLzJnSm6clMVm8UFBYRXsXxPCy0WsjgEZTuXf7UJIKNS3jiYKO24tdEgFA5Z+YZKCOWjWG6s8pJ7rE+DRO+SBc5gk2zlRXIk7Vm3u4lPt4PIbMJVabz5l8g4Cgj8VDZM+EUqU0CAXcxGSXzy2tXysW1XekPpsD5ke1lDlnJR6V+mIPImP74aQs0N1zXyhXNRq2NSJpEq+sN+3S/FYwoI5OI0vaRT5S4BgXy/TaNo0b9RPr5/eunFy2Xcm1Sl4pFL45fTVrG2qKOnh0N60m649sb42rjqhqvVussfNrITM1oyhMp7JAimzyx+eLMVVN50+/FfuuEZEMxEhVD1AxnC/7U0EH6BNBB+gTQQfoE0EH6BEAhe5xe+yb8EIUUQ2u7H73sTftTEdQjvfw2EPwRC+/e9CfQznBE2vLpMCm38/dsXj4P+TQIfrocgeBYTkZ+SWxMe6xnUrxVou71W4rr1Sz/PkVs6/msYgOfNWjPPfeyJT43UCZxdAqHzXwPhaQLjjhe2up5r+jd8G7m/oGnCh9NykHV+/ImYjVQLILvcQRBir/Mjh8M2UiFw6ng5ghC23eag/WcJRJ2PFYLgeG7n5w+8agQLbF0vdjAE1BXajVV4hgCaLrcDAsHpeJ0/zYD08wLINcIdgUAIkIVeNBR+XGDsut6KQXBmiMLvOEP9HxKAk+u2ScieQHCytuseGwo/KQBTxIDmVFEImELnj9nxhY3cQQD6fxADtqedQSAUvONfEZj8/YLT0Nodt81TAjkE5Kii+UL7v/VfEiL+rULUuzsiBJ4nEvYFBGfewxjc9st0Wxz80ci9ZT99aXsIQTsuUtwLCI7TjT881+10kOPUyKOE6vcjk/cyyBDwIbvuB/5hIw8TpN6PRNstoUIgxmGWJ+1GHiTJbFY+B+5/8KdvtM4ZwnMAAAAASUVORK5CYII=" alt="">
+        </div>
+    </div>
+    <div id="last">
+        <div id="lgs">
+            <div id="logos">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="gray" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="gray" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="gray" class="bi bi-youtube" viewBox="0 0 16 16">
+                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="gray" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="gray" class="bi bi-skype" viewBox="0 0 16 16">
+                    <path d="M4.671 0c.88 0 1.733.247 2.468.702a7.423 7.423 0 0 1 6.02 2.118 7.372 7.372 0 0 1 2.167 5.215c0 .344-.024.687-.072 1.026a4.662 4.662 0 0 1 .6 2.281 4.645 4.645 0 0 1-1.37 3.294A4.673 4.673 0 0 1 11.18 16c-.84 0-1.658-.226-2.37-.644a7.423 7.423 0 0 1-6.114-2.107A7.374 7.374 0 0 1 .529 8.035c0-.363.026-.724.08-1.081a4.644 4.644 0 0 1 .76-5.59A4.68 4.68 0 0 1 4.67 0zm.447 7.01c.18.309.43.572.729.769a7.07 7.07 0 0 0 1.257.653c.492.205.873.38 1.145.523.229.112.437.264.615.448.135.142.21.331.21.528a.872.872 0 0 1-.335.723c-.291.196-.64.289-.99.264a2.618 2.618 0 0 1-1.048-.206 11.44 11.44 0 0 1-.532-.253 1.284 1.284 0 0 0-.587-.15.717.717 0 0 0-.501.176.63.63 0 0 0-.195.491.796.796 0 0 0 .148.482 1.2 1.2 0 0 0 .456.354 5.113 5.113 0 0 0 2.212.419 4.554 4.554 0 0 0 1.624-.265 2.296 2.296 0 0 0 1.08-.801c.267-.39.402-.855.386-1.327a2.09 2.09 0 0 0-.279-1.101 2.53 2.53 0 0 0-.772-.792A7.198 7.198 0 0 0 8.486 7.3a1.05 1.05 0 0 0-.145-.058 18.182 18.182 0 0 1-1.013-.447 1.827 1.827 0 0 1-.54-.387.727.727 0 0 1-.2-.508.805.805 0 0 1 .385-.723 1.76 1.76 0 0 1 .968-.247c.26-.003.52.03.772.096.274.079.542.177.802.293.105.049.22.075.336.076a.6.6 0 0 0 .453-.19.69.69 0 0 0 .18-.496.717.717 0 0 0-.17-.476 1.374 1.374 0 0 0-.556-.354 3.69 3.69 0 0 0-.708-.183 5.963 5.963 0 0 0-1.022-.078 4.53 4.53 0 0 0-1.536.258 2.71 2.71 0 0 0-1.174.784 1.91 1.91 0 0 0-.45 1.287c-.01.37.076.736.25 1.063z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="gray" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                  </svg>
+            </div>
+            <div id="subscribe">
+                <p>Subscribe to our newsletter</p><input
+              placeholder="Your Work Email"
+              type="email"
+              name="email"
+              id="email"
+            /><button id="free">SUBSCRIBE</button>
+            </div>
+        </div>
+    </div>
+   
+  </body>
 </html>
+

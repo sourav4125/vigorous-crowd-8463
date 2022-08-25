@@ -165,6 +165,7 @@ line-height: 19px;
 #heads{
     width: 80%;
     margin: auto;
+    margin-bottom: 60px;
     
 }
 #heads>h1{
@@ -173,3 +174,211 @@ line-height: 19px;
     text-align: center;
     
 }
+#workflow{
+    
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+#workflow>#jpg{
+width: 80%;
+
+margin-right:50px;
+}
+#workflow>#para>h1{
+    width: 80%;
+    padding-right: 20px;
+    
+}
+#workflow>#para>p{
+    width: 75%;
+    line-height: 20px;
+}
+#brands{
+   
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 39px;
+}
+#brands>#brand{
+    margin-right: 50px;
+}
+#brands>#context>h1{
+    margin-top: 70px;
+    width: 80%;
+    line-height: 35px;
+}
+#brands>#context>p{
+    width: 80%;
+    line-height: 25px;
+}
+#brands>#context>button{
+    height: 40px;
+    margin-top: 12px;
+}
+#mobtrack{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 29px;
+}
+#mobtrack>h1{
+    width: 60%;
+    margin: auto;
+}
+#device{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+    
+}
+#device>#desktop{
+    margin-right: 30px;
+}
+#device>#mobile{
+    margin-right: 30px;
+}
+#device>#web>h3{
+    color: #43762b;
+    margin-bottom: 40px;
+}
+#device>#desktop>button{
+    height: 40px;
+}
+#device>#mobile>button{
+    height: 40px;
+}
+#device>#web>button{
+    height: 40px;
+}
+#ttt{
+    background-color:#4ea819;
+    height: 339px;
+    margin-bottom:45px;
+}
+#tt{
+    
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+#tt>h1{
+    color: white;
+    padding-top: 30px;
+    width: 50%;
+    margin: auto;
+}
+#tt>#email{
+    width: 250px;
+    height: 37px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+#tt>#free{
+    background-color: #4ea819;
+    height: 40px;
+    color: white;
+    border: 1px solid white;
+    font-weight: bolder;
+}
+#tt>p{
+    margin-top: 30px;
+    color: white;
+    
+}
+#footer{
+    
+    display: flex;
+    width: 80%;
+    margin: auto;
+   
+}
+#footer>div{
+    margin-right: 100px;
+}
+#footer>#company>h3{
+    font-weight: bolder;
+    margin-right: 20%;
+}
+#footer>#learnmore>h3{
+    font-weight: bolder;
+    margin-right: 20%;
+}
+#footer>#feat>h3{
+    font-weight: bolder;
+    margin-right: 20%;
+}
+
+#footer>#integrations>h3{
+    font-weight: bolder;
+    margin-right: 20%;
+}
+#footer>#help>h3{
+    font-weight: bolder;
+    margin-right: 20%;
+}
+#footer>#company>p{
+    width:100px;
+    color: grey;
+}
+#footer>#learnmore>p{
+color: gray;
+}
+#footer>#feat>p{
+    color: gray;
+}
+#footer>#integrations>p{
+    color: gray;
+ 
+}
+#footer>#help>p{
+    color: gray;
+    }
+#lst{
+    background-color: #EBECEC;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 24px;
+
+} 
+#lst>#igs>img{
+    margin-top: 20px;
+    width: 150px;
+} 
+#lst>#applestore>img{
+    margin-top: 20px;
+    width: 130px;
+}
+#last{
+    background-color: #EBECEC;
+}
+#lgs{
+    display: flex;
+    width: 80%;
+    margin: auto;
+   
+}
+#lgs>#logos{
+    width: 40%;
+}
+#lgs>#logos>svg{
+    margin-right: 10px;
+}
+#lgs>#subscribe{
+    display: flex;
+}
+#lgs>#subscribe>p{
+    margin-right: 12px;
+}
+#lgs>#subscribe>#email{
+    margin-right: 12px;
+}
+#lgs>#subscribe>#free{
+    background-color:#4ea819;
+    color: white;
+    border-radius: 2px;
+}
+    
