@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.box {
+  width: 30%;
+
+  margin: auto;
+  margin-top: 10%;
+
+  text-align: center;
+}
+
+.box h1 {
+  width: 100%;
+  margin: auto;
+  color: black;
+  font-weight: bolder;
+}
+.box > #username {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 85%;
+  height: 38px;
+}
+.box > #password {
+  margin-bottom: 20px;
+  width: 85%;
+  height: 38px;
+}
+
+.box > #login {
+  margin-bottom: 20px;
+  width: 85%;
+  height: 38px;
+  background-color: green;
+  border: 1px solid gray;
+  color: white;
+  font-weight: bolder;
+}
+#pw {
+  width: 80%;
+  margin: auto;
+
+  text-align: center;
+}
+#pw > h3 {
+  text-decoration: underline;
+}
+
+#social {
+  border: 1px solid gray;
+  width: 25%;
+  height: 130px;
+  margin: auto;
+  margin-top: 53px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#social > #platform > img {
+  width: 50px;
+
+  margin-right: 20px;
+}
+
+#footer {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+#footer > div {
+  margin-right: 100px;
+}
+#footer > #company > h3 {
+  font-weight: bolder;
+  margin-right: 20%;
+}
+#footer > #learnmore > h3 {
+  font-weight: bolder;
+  margin-right: 20%;
+}
+#footer > #feat > h3 {
+  font-weight: bolder;
+  margin-right: 20%;
+}
+
+#footer > #integrations > h3 {
+  font-weight: bolder;
+  margin-right: 20%;
+}
+#footer > #help > h3 {
+  font-weight: bolder;
+  margin-right: 20%;
+}
+#footer > #company > p {
+  width: 100px;
+  color: grey;
+}
+#footer > #learnmore > p {
+  color: gray;
+}
+#footer > #feat > p {
+  color: gray;
+}
+#footer > #integrations > p {
+  color: gray;
+}
+#footer > #help > p {
+  color: gray;
+}
+#lst {
+  background-color: #ebecec;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 24px;
+}
+#lst > #igs > img {
+  margin-top: 20px;
+  width: 150px;
+}
+#lst > #applestore > img {
+  margin-top: 20px;
+  width: 130px;
+}
+#last {
+  background-color: #ebecec;
+}
+#lgs {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+#lgs > #logos {
+  width: 40%;
+  margin-right: 50px;
+}
+#lgs > #logos > svg {
+  margin-right: 20px;
+  margin-top: 15px;
+}
+#lgs > #subscribe {
+  display: flex;
+  margin-top: 15px;
+  margin-left: 50px;
+}
+#lgs > #subscribe > p {
+  margin-right: 12px;
+  
+}
+#lgs > #subscribe > #email {
+  margin-right: 12px;
+  
+}
+#lgs > #subscribe > #free {
+  background-color: #4ea819;
+  color: white;
+  border-radius: 2px;
+}

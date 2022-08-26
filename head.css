@@ -1,8 +1,9 @@
 #navbar{
     height: 90px;
-    border: 1px solid red;
+   
     display: flex;
     justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     /* margin: auto; */
     
 }
@@ -28,19 +29,17 @@
 .container>button:hover{
     cursor: pointer;
 }
-.container>button~.btn{
-    border: 1px solid rgb(150, 49, 49);
-    
-}
+
 .container>button~.su{
     background-color:#43762b;
     color: white;
     
 }
+
 #body{
     width: 80%;
     margin: auto;
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
@@ -49,7 +48,7 @@
 }
 #body>#c{
     
-    border: 1px solid palegreen;
+    /* border: 1px solid palegreen; */
     width:50%;
     height: auto;
     
@@ -59,6 +58,9 @@
 }
 #body>#c>.p{
     width: 85%;
+}
+#body>#utube{
+    margin-top: 20px;
 }
 #c>#email{
     margin-right: 10px;
@@ -70,7 +72,7 @@
     color: white;
 }
 #logos{
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     width: 80%;
     margin: auto;
     margin-top: 7px;
@@ -80,7 +82,7 @@
     margin-right: 79px;
 }
 #base{
-border: 1px solid gold;
+/* border: 1px solid gold; */
 height: auto;
 width: 80%;
 margin: auto;
@@ -88,7 +90,7 @@ margin-top: 16px;
 display: flex;
 }
 #base>#bsc{
-border: 1px solid aqua;
+/* border: 1px solid aqua; */
 width: 70%;
 }
 #base>#bsc>h1{
@@ -99,13 +101,13 @@ width: 70%;
     line-height: 22px;
 }
 #base>#reviews{
-border: 1px solid firebrick;
+/* border: 1px solid firebrick; */
 }
 #bsc>#sq{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,auto);
-    border: 1px solid slateblue ;
+    /* border: 1px solid slateblue ; */
 }
 
 #bsc>#sq>div>p{
@@ -119,7 +121,7 @@ border: 1px solid firebrick;
 #tracker{
     width: 80%;
     margin: auto;
-    border: 1px solid springgreen;
+    /* border: 1px solid springgreen; */
     display: flex;
     margin-top: 19px;
 }
