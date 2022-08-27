@@ -1,0 +1,78 @@
+#title{
+    width: 50%;
+    margin:auto;
+   margin-bottom: 50px;
+    
+}
+#title>h3{
+    width: 100%;
+margin: auto;
+text-align: center;
+margin-top: 100px;
+
+font-size: 50px;
+
+}
+#title>p{
+    width: 100%;
+margin: auto;
+align-items: center;
+justify-content: center;
+margin-top: 25px;
+text-align: center;
+
+
+}
+#title>input::placeholder{
+text-align: left;
+}
+#title>#look{
+    height: 30px;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    margin-top: 25px;
+    margin-right: 19px;
+    margin-left: 170px;
+}
+#title>#search{
+    width: 70px;
+    background-color: green;
+    height: 33px;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    border-radius: 3px;
+}
+#grids{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(7,265px);
+    
+    gap: 20px;
+}
+#grids>div{
+    border: 1px solid gray;
+    margin-left: 10px;
+    
+}
+#grids>div>p{
+    color: rgb(5, 158, 23);
+   
+    
+}
+#grids>div>h3{
+    margin-left: 10px;
+}
+#grids>div>#view{
+    background-color: green;
+    margin-left: 15px;
+    margin-top: 15px;
+    height: 30px;
+    color: white;
+    font-weight: bolder;
+}
+   
+    

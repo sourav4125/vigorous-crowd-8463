@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.box {
+#box {
   width: 30%;
 
   margin: auto;
@@ -11,25 +11,25 @@ body {
   text-align: center;
 }
 
-.box h1 {
+#box h1 {
   width: 100%;
   margin: auto;
   color: black;
   font-weight: bolder;
 }
-.box > #username {
+#box > #username {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 85%;
   height: 38px;
 }
-.box > #password {
+#box > #password {
   margin-bottom: 20px;
   width: 85%;
   height: 38px;
 }
 
-.box > #login {
+#box > #login {
   margin-bottom: 20px;
   width: 85%;
   height: 38px;

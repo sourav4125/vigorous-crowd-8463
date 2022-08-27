@@ -99,7 +99,7 @@
 #indepth>#att>#text>button{
     background-color: green;
     height: 50px;
-    width: 250px;
+    width: 300px;
     color: white;
     font-weight: bolder;
 }
@@ -115,21 +115,21 @@
     padding:15px;
     margin: auto;
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 #url{
-    width: 80%;
+    width: 90%;
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 #url>#all{
     display: flex;
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 #url>#all>#text{
     margin: auto;
-    margin-left: 90px;
+    margin-left: 120px;
 }
 #url>#all>#text>p{
 width: 500px;
@@ -142,3 +142,175 @@ line-height: 25px;
     color: white;
     font-weight: bolder;
 }
+#capterra{
+  background-color: #2693f8;
+  margin-bottom: 150px;
+  
+}
+#capterra>#files{
+  display: flex;
+  margin: auto;
+  width: 75%;
+}
+#capterra>#files>#texts>h3{
+  margin-left: 280px;
+  
+  color: white;
+  font-weight: bolder;
+  font-size: 30px;
+}
+#capterra>#files>#texts>img{
+  width: 250px;
+  margin-left: 280px;
+  
+}
+#capterra>#files>#texts>p{
+  color: white;
+  width: 500px;
+  margin-left: 280px;
+}
+#capterra>#files>#image{
+  margin: auto;
+  height: 100px;
+}
+#ttt{
+  background-color:#4ea819;
+  height: 339px;
+  margin-bottom:45px;
+}
+#tt{
+  
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+#tt>h1{
+  color: white;
+  padding-top: 30px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+#tt>#p{
+  font-size: large;
+  
+  width:60%;
+  margin: auto;
+  margin-left: 250px;
+}
+#tt>#email{
+  width: 250px;
+  height: 37px;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+#tt>#free{
+  background-color: #4ea819;
+  height: 40px;
+  color: white;
+  border: 1px solid white;
+  font-weight: bolder;
+}
+#tt>p{
+  margin-top: 30px;
+  color: white;
+  
+}
+#footer{
+    
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+ 
+}
+#footer>div{
+  margin-right: 100px;
+}
+#footer>#company>h3{
+  font-weight: bolder;
+  margin-right: 20%;
+}
+#footer>#learnmore>h3{
+  font-weight: bolder;
+  margin-right: 20%;
+}
+#footer>#feat>h3{
+  font-weight: bolder;
+  margin-right: 20%;
+}
+
+#footer>#integrations>h3{
+  font-weight: bolder;
+  margin-right: 20%;
+}
+#footer>#help>h3{
+  font-weight: bolder;
+  margin-right: 20%;
+}
+#footer>#company>p{
+  width:100px;
+  color: grey;
+}
+#footer>#learnmore>p{
+color: gray;
+}
+#footer>#feat>p{
+  color: gray;
+}
+#footer>#integrations>p{
+  color: gray;
+
+}
+#footer>#help>p{
+  color: gray;
+  }
+  #lst {
+    background-color: #ebecec;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 24px;
+  }
+  #lst > #igs > img {
+    margin-top: 20px;
+    width: 150px;
+  }
+  #lst > #applestore > img {
+    margin-top: 20px;
+    width: 130px;
+  }
+  #last {
+    background-color: #ebecec;
+  }
+  #lgs {
+    display: flex;
+    width: 80%;
+    margin: auto;
+  }
+  #lgs > #logos {
+    width: 40%;
+    margin-right: 50px;
+  }
+  #lgs > #logos > svg {
+    margin-right: 20px;
+    margin-top: 15px;
+  }
+  #lgs > #subscribe {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 50px;
+  }
+  #lgs > #subscribe > p {
+    margin-right: 12px;
+    
+  }
+  #lgs > #subscribe > #email {
+    margin-right: 12px;
+    
+  }
+  #lgs > #subscribe > #free {
+    background-color: #4ea819;
+    color: white;
+    border-radius: 2px;
+  }
+  
