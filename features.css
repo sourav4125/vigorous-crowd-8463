@@ -69,6 +69,9 @@
   gap: 10px;
   
 }
+#ob > #buttons>button>svg{
+  margin-right: 5px;
+}
 #ob > #buttons>button{
     background-color: white;
     border: 0.2px solid gray;
